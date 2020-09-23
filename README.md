@@ -15,7 +15,7 @@ from a
 [post](https://support.glitch.com/t/language-support-on-glitch-a-list/5466)
 by [Annaia Berry](https://support.glitch.com/u/jarcane).
 
-```json
+```yaml
 {
   // What to run before the first time this app is launched?
   "install": "bundle install",
