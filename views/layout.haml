@@ -9,5 +9,10 @@
     %link{rel: 'shortcut icon', href: '/favicon.ico'}
     %title Sinatra - Glitch
   %body
+    %header.content
+      %a{class: 'github-button', data: {icon: :large}, aria: {label: 'Fork exegete46/sinatra-glitch on GitHub'}, href: 'https://github.com/exegete46/sinatra-glitch/fork',}
+        Fork
     %div.content
       = yield
+
+%script{async: true, defer: true, src: 'https://buttons.github.io/buttons.js'}
