@@ -22,4 +22,12 @@ class App < Sinatra::Base
   get '/' do
     markdown File.read('README.md')
   end
+  
+  get '/:path' do |path|
+    begin
+      haml params[:path].to_sym
+    rescue Errno::ENOENT
+      pass
+    end
+  end
 end
